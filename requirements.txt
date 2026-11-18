@@ -2,4 +2,5 @@ pandas
 openpyxl
 streamlit
 matplotlib
+seaborn
 plotly
