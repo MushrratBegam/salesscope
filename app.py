@@ -2,12 +2,12 @@ import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
-import plotly.express as px
+import plotly.express as px 
 
 
 
 # Load dataset
-df = pd.read_excel(r"dataset/Financial_Sample.xlsx")
+df = pd.read_excel("./salesscope/dataset/Financial_Sample.xlsx")
 
 
 
@@ -24,7 +24,7 @@ st.set_page_config(
     page_icon="📊",
     layout="wide",
 )
-st.title("Sales Analytics Dashboard")
+st.title("Sales_Analysis_Dashboard")
 filtered_df = df.copy()
 col1 , col2 , col3 , col4 , col5 = st.columns(5)
 with col1:
