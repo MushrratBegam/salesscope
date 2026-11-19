@@ -2,12 +2,14 @@ import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
-import plotly.express as px 
+import plotly.express as px
+from pathlib import Path 
 
 
 
 # Load dataset
-df = pd.read_excel("./salesscope/dataset/Financial_Sample.xlsx")
+# df = pd.read_excel("./salesscope/dataset/Financial_Sample.xlsx")
+df = pd.read_excel(Path(__file__).parent / "dataset" / "Financial_Sample.xlsx")
 
 
 
